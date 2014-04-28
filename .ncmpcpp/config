@@ -1,25 +1,38 @@
-mpd_music_dir = "/home/juan/Música/"  
-mpd_connection_timeout = "5"  
-mpd_crossfade_time = "5"  
-# visualizer
-visualizer_fifo_path = "/tmp/mpd.fifo"
-visualizer_output_name = "my_fifo"
-visualizer_sync_interval = "30"
-#visualizer_type = "wave" (spectrum/wave)
-visualizer_type = "spectrum" (spectrum/wave)
+#
+# ~/.ncmpcpp/config - My ncmpcpp preferences
+# 
 
-# song format
-song_list_format = "{$3%n │ $9}{$7%a - $9}{$5%t$9}|{$8%f$9}$R{$6 │ %b$9}{$3 │ %l$9}"
-
-# various settings
-autocenter_mode = "yes"
-progressbar_look = "─╼·"
-user_interface = "alternative"
-alternative_header_first_line_format = "$0$aqqu$/a {$7%a - $9}{$5%t$9}|{$8%f$9} $0$atqq$/a$9"
-alternative_header_second_line_format = "{{$6%b$9}{ [$6%y$9]}}|{%D}"
-
-# color definitions
-main_window_color = "default"
-main_window_highlight_color = "default"
-alternative_ui_separator_color = "yellow"
-progressbar_color = "yellow"
+mpd_host                   = "localhost"
+mpd_port                   = "6600"
+mpd_music_dir              = "/home/juan/Música"
+mpd_crossfade_time         = "1"
+visualizer_in_stereo       = "yes"
+visualizer_fifo_path       = "/tmp/mpd.fifo"
+visualizer_output_name     = "my_fifo"
+visualizer_type            = "spectrum"                          # spectrum/wave
+song_list_format           = "$3{%A }|{%a }$7{%b }$0{%t}| $4$R{%7l}$9"
+now_playing_prefix         = "$r"
+now_playing_suffix         = "$/r"
+song_columns_list_format   = "(30)[green]{a} (40)[]{t|f} (30)[cyan]{b}"
+playlist_display_mode      = "columns"
+browser_display_mode       = "columns"
+search_engine_display_mode = "columns"
+autocenter_mode            = "yes"
+centered_cursor            = "yes"
+progressbar_look           = "   "
+user_interface             = "alternative"
+default_space_mode         = "select"
+header_visibility          = "no"
+statusbar_visibility       = "no"
+titles_visibility           = "no"
+follow_now_playing_lyrics    = "yes"
+store_lyrics_in_song_dir      = "yes"
+screen_switcher_mode           = "sequence: 2 -> 3  -> 9 -> 10"
+ignore_leading_the              = "yes"
+mouse_support                    = "no"
+empty_tag_marker                  = "[empty]"
+allow_physical_files_deletion      = "yes"
+allow_physical_directories_deletion = "yes"
+main_window_color                   = "default"
+main_window_highlight_color         = "default"
+visualizer_color                    = "blue"
